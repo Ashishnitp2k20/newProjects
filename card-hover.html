@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="Bootstrap 5/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+   
+    <script src="Bootstrap 5/js/bootstrap.bundle.js" async></script>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Bootstrap- Revision</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #36768c;
+            /* font-family: 'roboto', sans-serif; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .dance-font {
+            font-family: 'DancIng Script', cursive;
+        }
+
+        .card {
+            width: 320px;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 10px solid white;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: all 2s;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.2);
+        }
+
+        .card-body {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            background: #1f3d4738;
+            backdrop-filter: blur(5px);
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 2s;
+        }
+
+        .card:hover .card-body {
+            right: 0;
+        }
+
+        .card-title {
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .card-subtitle {
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .card-info {
+            font-size: 16px;
+            line-height: 25px;
+            margin: 40px 0;
+            font-weight: 400;
+            font-family: 'roboto slab', sans-serif;
+        }
+
+        .card-btn {
+            color: #1f3d4738;
+            background: #8fabba;
+            padding: 10px 20px;
+            width: 120px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .fa-icon-style{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="img/akk.jpg" class="card-img" alt="Image">
+        <div class="card-body">
+            <h1 class="card-title"><span class="text-warning dance-font">My</span> <span
+                    class="dance-font">Profile</span></h1>
+            <p class="card-subtitle dance-font text-primary fw-bold shadow-sm">About me</p>
+            <p class="card-info">Myself Ashish Kumar, I am a B.Tech student at NIT PATNA in Computer Science and
+                Engineering Department.</p>
+            <div class="fa-icon-style d-flex justify-content-around">
+                <i class="fab fa-github text-dark fa-2x"></i>
+                <i class="fab fa-instagram-square text-danger fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
